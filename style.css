@@ -11,3 +11,49 @@ nav {
     font-weight: bold;
     margin: 0 10px;
   }
+
+  .menu {
+    background-color: #ffffff; /*cambiar el color de fondo si se desea*/
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+  }
+  
+  .menu li {
+    display: inline-block;
+    margin-right: 30px;
+  }
+  
+  .menu li:last-child {
+    margin-right: 0;
+  }
+  
+  .menu li a {
+    position: relative;
+    display: block;
+    color: #000000; /*cambiar el color de texto si se desea*/
+    text-decoration: none;
+  }
+  
+  .menu li a:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -15px;
+    transform: translateY(-50%);
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #ff69b4; /*cambiar el color del círculo si se desea*/
+  }
+  
+  .menu li a:hover:before {
+    background-color: #ff007f; /*cambiar el color del círculo al pasar el mouse sobre el enlace*/
+  }
+  
