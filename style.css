@@ -1,0 +1,36 @@
+ul {
+    padding: 0;
+    list-style: none;
+  }
+  
+  li {
+    display: inline-block;
+    position: relative;
+    margin-right: 1.5em;
+  }
+  
+  li:before {
+    content: "";
+    display: block;
+    width: 2cm;
+    height: 2cm;
+    background-color: pink;
+    border-radius: 50%;
+    position: absolute;
+    left: -1.5em;
+    top: 0.6em;
+    z-index: -1;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ededed;
+    padding: 10px;
+  }
+  nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    margin: 0 10px;
+  }
