@@ -1,2 +1,2 @@
 # illustrati
-# This is the first website project builded by Nicole & Sergio <3
+# This is the first website project builded by Nicole & Sergio.
