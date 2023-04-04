@@ -1,60 +1,25 @@
-nav {
+/*Control de estilos*/
+
+/* Pagina Principal*/
+/*Imagen logotypo*/
+img.image-logo{
+    height: 10%;
+    width: 10%;
+}
+
+/*Menu de navegacion principal*/
+ul.menu {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #ededed;
-    padding: 10px;
-    width: 50%;
+    justify-content: center;
+    list-style: none;
   }
-  nav a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
+
+/*Objetos del menu*/
+li.menu-item {
     margin: 0 10px;
   }
 
-  .menu {
-    background-color: #ffffff; /*cambiar el color de fondo si se desea*/
-    padding: 10px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
+/*Objetos del menu con enlace*/
+li.menu-item a{
+    color: blueviolet;
   }
-  
-  .menu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: inline-block;
-  }
-  
-  .menu li {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .menu li:last-child {
-    margin-right: 0;
-  }
-  
-  .menu li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    background-color: #ff69b4;
-    margin: 10px;
-  }
-  .menu li a {
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-  }
-
-  .menu li a:hover:before {
-    background-color: #ff007f; /*cambiar el color del círculo al pasar el mouse sobre el enlace*/
-  }
-  
