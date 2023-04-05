@@ -1,25 +1,66 @@
-/*Control de estilos*/
-
-/* Pagina Principal change*/
-/*Imagen logotypo*/
-img.image-logo{
-    height: 10%;
-    width: 10%;
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-/*Menu de navegacion principal*/
-ul.menu {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-  }
+main {
+  display: flex;
+}
 
-/*Objetos del menu*/
+article {
+  flex: 2 2 12em;
+}
+
+nav,
+aside {
+  flex: 1;
+}
+
+footer {
+  display: flex;
+}
+
+flex-container.header {
+  display: flex;
+  justify-content: center;
+}
+
+img.image-logo {
+  width: 10%;
+  height: 10%;  
+}
+
+ul.menu-header {
+  display: flex;
+}
+
 li.menu-item {
-    margin: 0 10px;
-  }
+  margin-right: 20px;
+}
 
-/*Objetos del menu con enlace*/
-li.menu-item a{
-    color: blueviolet;
-  }
+li.menu-item:last-child {
+  margin-right: 0;
+}
+
+ul.menu-section {
+  display: flex;
+}
+
+li.menu-section-item {
+  margin-right: 20px;
+}
+
+li.menu-section-item:last-child {
+  margin-right: 0;
+}
+
+.pink {
+  color: magenta;
+}
+@media screen and (max-width: 500px) {
+  main {
+    flex-direction: row;
+
+  }  
+}
