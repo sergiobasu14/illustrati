@@ -18,12 +18,20 @@ aside {
 }
 
 footer {
-  display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: gray;
+  color: white;
 }
+
 
 flex-container.header {
   display: flex;
   justify-content: center;
+  flex-direction: row;
+  gap: 5%;
 }
 
 img.image-logo {
@@ -37,6 +45,13 @@ ul.menu-header {
 
 li.menu-item {
   margin-right: 20px;
+  list-style: none;
+  text-decoration: none;
+}
+
+li.menu-item a {
+  text-decoration: none;
+  color: magenta;
 }
 
 li.menu-item:last-child {
@@ -58,6 +73,15 @@ li.menu-section-item:last-child {
 .pink {
   color: magenta;
 }
+
+.big {
+  font-size: 50px;
+}
+
+.h2 {
+  font-size: 50px;
+}
+
 @media screen and (max-width: 500px) {
   main {
     flex-direction: row;
