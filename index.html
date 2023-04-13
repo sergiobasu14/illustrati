@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,13 +9,14 @@
     <link rel="shortcut icon" type="image/ico" href="/image/favicon.ico">
     <title>Illustrati</title>
 </head>
+
 <body>
     <header>
-        <flex-container class="header">
-            <img class="image-logo" src="image/illustrati.jpeg" alt="Logo">
+        <flex-container id="header">
+            <img id="image-logo" src="images/illustrati.jpeg" alt="Logo">
             <h1 class="logo" > <span class="pink">By</span> <br> NICOLE ROPAIN</h1>
             <div>
-              <ul class="menu-header">
+              <ul id="menu-header">
                 <li class=menu-item><a href="#">Presentacion</a></li>
                 <li class=menu-item><a href="#">Perfil</a></li>
                 <li class=menu-item><a href="#">Portafolio</a></li>
@@ -25,25 +27,20 @@
     </header>
 
     <main>
-        <nav>
-            <h2>HOLA <span class="pink" class="big">,</span> </h2>
+          <flex-container class="article">
+            <img id="portrait" src="images/portrait.jpeg" alt="portrait">
+          </flex-container>
+
+          <flex-container class="section-right">
+            <h2>HOLA <span class="pink">,</span> </h2>
             <p>UN POCO DE MI:</p>    
-        </nav>
-        <article>
-            <div class="section-right">
-                <ul class="menu-section">
-                  <li class="menu-section-item"><a href="#">Perfil</a></li>
-                  <li class="menu-section-item"><a href="#">Portafolio</a></li>
-                  <li class="menu-section-item"><a href="#">Contactame</a></li>
-                </ul>
-                <p>Soy una persona creativa que quiere aportarle al mundo un poco de lo que lleva dentro,<br> dejando una huella positiva en todo trabajo que realice.</p>
-              </div>   
-        </article>
-        <!--
-        <aside>
-            <h1>Sidebar</h1>
-        </aside>
-        -->
+            <ul class="menu-section">
+              <li class="menu-section-item"><a href="#">Perfil</a></li>
+              <li class="menu-section-item"><a href="#">Portafolio</a></li>
+              <li class="menu-section-item"><a href="#">Contactame</a></li>
+              </ul>
+            <p>Soy una persona creativa que quiere aportarle al mundo un poco de lo que lleva dentro,<br> dejando una huella positiva en todo trabajo que realice.</p>   
+          </flex-container>
     </main>
 
     <footer>
